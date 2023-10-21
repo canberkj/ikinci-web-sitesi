@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Can berk boostrap ilk proje</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+      
+      
+      .list {
+        position: sticky;
+        top: 10px;
+
+      }
+      
+      
+      
+    </style>
+  </head>
+  <body class="bg-dark">
+    <!-- navbar start -->
+    
+      
+
+      <nav id="home" class="navbar navbar-expand-lg  bg-body-tertiary   " data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand ms-5 " href="#home">CanBerk Web</a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Ana Sayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#accounts">Bağlantılar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Neler Öğrendim
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#article-1">HTML</a></li>
+                      <li ><a class="dropdown-item" href="#article-2" >
+                        CSS
+                      </a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li ><a class="dropdown-item" href="#article-3">SCSS</a></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- navbar end -->
+
+
+
+
+    <!-- carousel start -->
+    <div class="container-fluid  " >
+      <div class="row  text-light align-items-center">
+        <div class="col-sm-4">
+          <div id="info" class="carousel slide">
+            
+            <div class="carousel-inner text-center align-items-end mt-3">
+              <div class="carousel-item active ">
+                <h2>Kişisel bilgi</h2>
+                <p class="mb-1">Adım Can Berk</p>
+                <p class="mb-1">Soyadım Yılmaz, 25 Yaşındayım</p>
+                <p class="mb-1">Artvinde ailemle yaşıyorum</p>
+                
+              </div>
+              <div class="carousel-item">
+                <h2>Bu sitede kullandıklarım</h2>
+                <ul class="list-group">
+                  <li  ><a class="text-decoration-none text-light" href="#html">HTML</a></li>
+                  <li><a class="text-decoration-none text-light" href="#">Bootstrap-5</a></li>
+                </ul>
+                
+              </div>
+              <div class="carousel-item">
+                <h2>Aile üyelerim</h2>
+                <ul class="list-group">
+                  <li><a class="text-decoration-none text-light" href="#family">Babam: Fikret yılmaz</a>
+                    
+                  </li>
+                  <li><a class="text-decoration-none text-light" href="#family">Anam: Eylem Yılmaz</a></li>
+                  <li><a class="text-decoration-none text-light" href="#family">Kardeşim: Muhammet Ali P. Yılmaz</a></li>
+                </ul>
+                
+              </div>
+            </div>
+            <div class="carousel-indicators position-relative align-items-end m-0">
+              <button type="button " data-bs-target="#info" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#info" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#info" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="col-sm-8">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              
+            </div>
+            <div class="carousel-inner p-5">
+              <div class="carousel-item active ">
+                <img class="img-fluid  rounded mx-auto d-block" src="./img/can berk.png" class="d-block w-100" alt="canBerk">
+                
+              </div>
+              <div class="carousel-item">
+                <img  class="img-fluid rounded mx-auto d-block" src="./img/aile.png " class="d-block w-100" alt="aile">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+
+
+
+
+
+    <!-- start -->
+    <div class="container-fluid bg-white">
+      <div class="row justify-content-center ">
+        <div class=" -center bg-light w-50 p-5 ms-5 text-center  shadow ">
+          <h1>Kendimi Geleceğe Hazırlıyorum</h1>
+          <p>Python öğrenerek başladığım bu serüvene ilk JavaScript diliyle şimdi de fronntEnd geliştirici olma yoluyla devam ediyorum.</p>
+          <p>CSS ve Bootstrap bilgilerimi geliştirdiğim bir site olmasını umuyorum</p>
+          <p></p>
+        </div>
+      
+        <div class="col-sm-12 bg-dark text-light text-center p-5 ">
+            <h1>Sevgilim her zaman en büyük destekçim.</h1>
+            <img class="img-fluid mt-5" src="/img/sevgili.png" alt="">
+            <p class="mt-5">Yakın gelecekte hayatımızı birleştirmeyi düşünüyoruz :)</p>
+          </div>
+          
+
+        
+      </div>
+    </div>
+
+    <!-- end -->
+
+
+
+    <!-- cards start -->
+    <div id="family" class="container-fluid bg-white py-5 ">
+      <div class="row  ">
+        <div class="row row-cols-1  row-cols-md-3  text-center justify-content-evenly  mx-auto">
+          
+          <div class="col m-0 p-0 shadow ">
+            <div class="card h-100 ">
+              <img src="/img/f'ko+eylem.png" class="card-img-top" alt="anneVeBaba">
+              <div class="card-body">
+                <h5 class="card-title">Anam ve Babam</h5>
+                <p class="card-text">97 yılında evlendiler. Babam 67 doğumlu anam ise 77 doğumlu.</p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Detaylı bilgi için tıklayınız</button>
+
+                <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header ">
+                    <h5 class="offcanvas-title  w-100" id="offcanvastopLabel">Fikret Yılmaz -  Eylem Yılmaz</h5>
+                    <button type="button" class="btn-close  " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body top">
+                    <p>1997 yılının bir sabahında uyanıp artık evlenmeliyiz dediler.. Ve evlendiler. Babam itfaiyeci ateşe fısıldayan adam. Anam da yemeklerin efendisi ev hanımı. </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col m-0 p-0 shadow">
+            <div class="card h-100 ">
+              <img src="/img/mami.png" class="card-img-top" alt="mami">
+              <div class="card-body">
+                <h5 class="card-title">Mami</h5>
+                <p class="card-text">2005 doğumlu velet. artvinde üni okuyor.</p>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Detaylı bilgi için tıklayınız</button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title w-100" id="offcanvasBottomLabel">Muhammed Ali Paşa Yılmaz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body small">
+                    2005 yılında İstanbulda dünyaya geldi. Doğduğunda ilk 2-3 ay hastaneden çıkamadı astım hastasıydı. bi ara annemle çarpıştılar yandı. Çilekeş gardaşım benim. İlkokul hayatı da lise hayatı da üstün performanslı geçmedi. Zeki ama çalışmıyor. Artvinde üniversite kazandıktan sonra çok rollenmeler oldu ama eve çıkmayı başaramadı yurtta kalıyor.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          
+          
+          
+          
+        </div>
+        <div class=" my-5 ">
+          <div class="row col-sm-12">
+            <div class="col"><img src="https://picsum.photos/id/231/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/232/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/233/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/237/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/234/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/235/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/236/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/237/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/230/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/229/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/228/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/227/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/222/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/225/200/300" alt="" class="img-thumbnail w-100"></div>
+            <div class="col"><img src="https://picsum.photos/id/223/200/300" alt="" class="img-thumbnail w-100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+    <!-- cards end -->
+
+
+
+    <!-- articles start -->
+
+
+    
+    <div id="articles" class=" row m-0    bg-dark pt-5 " >
+      <div class=" col-sm-1 " ></div>
+      <div class=" col-sm-4 mb-2 ">
+        <ul class="list list-group shadow">
+          <a class="text-decoration-none text-dark text-center" href="#article-1"><li class="list-group-item list-group-item-action">HTML</li></a>
+          <a class="text-decoration-none text-dark text-center" href="#article-2"><li class="list-group-item list-group-item-action">CSS</li></a>
+          <a class="text-decoration-none text-dark text-center" href="#article-3"><li class="list-group-item list-group-item-action">SCSS</li></a>
+          <a class="text-decoration-none text-dark text-center" href="#article-4"><li class="list-group-item list-group-item-action">JavaScript</li></a>
+          <a class="text-decoration-none text-dark text-center" href="#article-5"><li class="list-group-item list-group-item-action">React</li></a>
+        </ul>
+      </div>
+      <div class=" col-sm-1 " ></div>
+      <div  class=" col-sm-5 " >
+        <ul  class="   text-center    px-3 ">
+          <article id="article-1" class="card p-3  mb-2 shadow">
+            <h3>HTML</h3>
+            <img class="img-thumbnail mb-3" src="/img/html51.jpg" alt="htmlgorsel">
+            <p>HTML, web tasarımcılarına sayfalar ve uygulamalar için yapı profilleri, bağlantılar, blok alıntılar, paragraflar ve başlıklar oluşturmalarında yardımcıdır. Bu konuda basit kod yapıları olan etiketler ve nitelikler kullanılarak web sayfaları şekillendirilebilir. HTML için aslında bir web sitesinin iskeleti denilebilir. Yani HTML kodları olmadan web sitesi kodlanamaz.</p>
+            <p>Web sitesi ve sayfaları oluşturulurken mutlaka kullanılması gereken HTML, yeni başlayanlar için öğrenmesi en kolay biçimleme dillerinden biridir. HTML dersleri alarak sistemli bir çalışma için kendinizi geliştirebilir, öğrendiğiniz bilgileri web sayfası tasarlama aşamasında deneyebilirsiniz. Zamanla sahip olduklarınızdan fazlasını öğrenebilir ve web sitesi tasarlama konusunda söz sahibi olabilirsiniz.</p>
+          </article>
+          <article id="article-2" class="card p-3 mb-2 shadow ">
+            <h3>CSS</h3>
+            <img class="img-thumbnail mb-3" src="/img/css.jpeg" alt="htmlgorsel">
+            <p>İngilizcesi “Cascading Style Sheets” olan CSS açılımı, “Basamaklanmış Stil Katmanları” anlamına gelmektedir. “CSS    nedir?” sorusunun cevabı ise web sitelerinin görsel olarak şekillendirilmesine olanak tanıyan ve kendine has kuralları olan bir tanım dilidir şeklinde ifade edilebilir. HTML ve JavaScript ile birlikte en temel web teknolojileri arasında bulunan CSS, web sayfaları üzerinde oldukça fazla görsel denetim sunar.   
+            </p>
+            <p>CSS sayesinde web sayfalarının mizanpajı, renkleri, kullanılan fontlar, ara başlıklar, görsel efektler ve diğer görsel unsurlar üzerinde etkili ve fonksiyonel bir kontrol sağlayabilirsiniz. Kullanıcı dostu olan ve görsel açıdan etkileyici web siteleri için HTML ve JavaScript’in yanı sıra yazılan CSS kodları son derece önem taşır. Etkili bir CSS kodlaması, web sitelerine yüksek bir kullanılabilirlik sunar.</p>
+          </article>
+          <article id="article-3" class="card p-3 mb-2 shadow">
+            <h3>SCSS-SASS</h3>
+            <img class="img-thumbnail mb-3" src="/img/scss.jpeg" alt="htmlgorsel">
+            <p>SASS ve SCSS Nedir?SASS ve SCSS kavramları Front-End geliştiricilerin karşısına mutlaka bir şekilde çıkıyor. Çıkış sebebini ve kullanım amacını okuyanlar ilk başta "gereksiz" gibi görse de sunduğu imkanlar ve yazım kolaylıkları nedeniyle bu teknolojiler zamanla olmazsa olmazlar arasına giriyor.</p>
+            <p>SASS'ın açılımı Syntactically Awesome Stylesheets'dir. Pek anlamlı olmasa da Türkçeye "Sözdizimsel Müthiş Stil Sayfaları" olarak çevrilebilir. Tanımından çok işlevine odaklanmak gerektiğini düşünüyorum. SASS'ı CSS'in programlama diline çevrilmiş hali olarak açıklayabiliriz. </p>
+          </article>
+          <article id="article-4" class="card p-3 mb-2 shadow">
+            <h3>JavaScript</h3>
+            <img class="img-thumbnail mb-3" src="/img/JavaScript.png" alt="htmlgorsel">
+            <p>JavaScript, web sayfalarının hayat bulmasını sağlayan ve onları etkileşimli hale getirmek için kullanılan güçlü bir programlama dilidir. JavaScript olmadan web siteleri yalnızca düz metin ve resimler şeklinde kalır: Google Haritalar yalnızca basit bir harita şeklinde ve Facebook bir gazete gibi görünür.</p>
+          </article>
+          <article id="article-5" class="card p-3 mb-2 shadow">
+            <h3>React</h3>
+            <img class="img-thumbnail mb-3" src="/img/react.jpg" alt="htmlgorsel">
+            <p>ReactJS, geliştiriciler tarafından web uygulamaları için kullanıcı arayüzleri oluşturmak amacıyla kullanılan güçlü bir JavaScript kütüphanesidir. İlk olarak 2011 yılında Facebook tarafından web sitelerinin performansını artırmak için oluşturuldu ve o zamandan beri dünya çapındaki geliştiriciler tarafından yaygın bir şekilde benimsendi. React JS'nin en önemli avantajlarından biri, tüm sayfayı yeniden yüklemeye gerek kalmadan kullanıcı arayüzünü verimli bir şekilde güncellemesine olanak tanıyan sanal DOM'udur. Ayrıca React JS, karmaşık kod tabanlarını basitleştirmeye ve geliştirmeyi daha hızlı ve verimli hale getirmeye yardımcı olabilecek yeniden kullanılabilir bileşenler oluşturmayı kolaylaştırır.</p>
+          </article>
+        </ul>
+      </div>
+    </div>
+
+    <!-- articles end -->
+
+
+    <!-- footer start -->
+    
+      <footer id="accounts" class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-light px-5">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary ">© 2023 ikinci websitem</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          
+          <li class="col-md-6   ">
+            <a class="text-body-secondary" href="#home" >
+              <i class="bi bi-house-up"></i></a>
+          </li>
+          
+        </ul>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">Hesaplarım:</li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://www.instagram.com/canberkj/" target="_blank">
+              <i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/canberkj" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/canberkj" target="_blank"><i class="bi bi-github"></i></a></li>
+        </ul>
+      </footer>
+
+
+
+    
+
+
+    <!-- footer end -->
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
